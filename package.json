@@ -1,0 +1,17 @@
+{
+  "name": "mastering-tool",
+  "version": "1.0.0",
+  "description": "Tool for music mastering",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Martin R. Gebhard",
+  "license": "ISC",
+  "dependencies": {
+    "aimastering": "^1.1.0",
+    "axios": "^1.9.0",
+    "express": "^5.1.0"
+  }
+}

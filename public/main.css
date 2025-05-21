@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Jura:300,regular,500,600,700);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Jura", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: clamp(3.5rem, 5vw, 10rem);
+  margin-bottom: .5em;
+}
+
+.search-form {
+  display: flex;
+  gap: 0.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.songname {
+  margin-bottom: 1rem;
+}
+
+input {
+  font-size: 1.2em;
+  padding: 0.5rem;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+@media screen {}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/main.css" />
+    <title><%= locals.title %></title>
+  </head>
+
+  <body>
+    <h1><%= locals.title %></h1>
+
+    <form class="search-form" action="/search-lyrics" method="post">
+      <input
+        type="text"
+        name="artist"
+        id="artist"
+        placeholder="Artist"
+        required
+      />
+      <input type="text" name="songname" placeholder="Songname" required />
+      <input type="submit" value="Search" />
+    </form>
+    <div>
+      <% if(locals.searchHistory) { %>
+      <h4>History:</h4>
+      <ul>
+        <% searchHistory.forEach(search => { %>
+        <li>
+          <a href="#"><%=search %></a>
+        </li>
+        <% }); %>
+      </ul>
+      <% } %>
+    </div>
+
+    <% if(locals.data) { %>
+    <div>
+      <h3 class="songname"><%=locals.artist %> – <%=locals.songname %></h3>
+      <p><%-data %></p>
+    </div>
+    <% } %>
+  </body>
+</html>
