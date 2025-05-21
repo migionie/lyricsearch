@@ -8,5 +8,5 @@ Program that uses the Lyrics.Ovh Api.
 
 # How to use
 It's pretty simple, just type in the artist name and song name, it returns the lyrics.
-But be warned, often the lyrics structure is kinda of and text ist sometimes missing.
+But be warned, often the lyrics structure is kinda off and text ist sometimes missing.
    
